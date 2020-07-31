@@ -7,7 +7,7 @@ It is an important question to ask when you try to find a new position on your c
 
 There are five steps we need to conduct: 1. collect initial data and have a good understanding of variables and strings; 2. clean the dataset and inspect all missing values; 3. explore the dataset to analyze the correlation between variables and companies;4. Process more-in-depth analysis using text mining and trend analysis; 5. run linear regression and decision tree models to predict future opportunities for employees.
 
-
+---
 ### 2. Data Understanding and Preparation
 
 We collected the initial dataset from Kaggle.com, an online community to do data science projects. The original employee reviews’ dataset was scraped from Glassdoor, a website where current and former employees anonymously review companies and their management. We downloaded the dataset from Kaggle and prepared to analyze it deeply.
@@ -20,6 +20,7 @@ We began our exploratory analysis looking at the comparisons between these six f
 
 Furthermore, we conducted the correlation plot between these rating variables and it revealed that the correlation between overall rating and culture value rating was the highest at 0.76, as was the correlation between senior management rating and overall rating (0.73). The correlation between overall rating and career opportunities rating was also higher than others (0.69). It revealed that there was a positive correlation between overall rating and culture values rating, senior management rating, and career opportunity rating. Our analysis of the correlation between overall rating and work balance rating and comp & benefit rating implied that there was a low correlation between these variables.
 
+---
 ### 3. Analysis Technique:
 
 We selected text mining and trend analysis to build the dataset models. The main purpose of text mining analysis is to compare the differences and similarities of employee reviews from different aspects among six companies.
@@ -46,13 +47,14 @@ Furthermore, we measured the list of words in summary variable and their associa
 
 We then analyzed the descriptions in summary variable to determine what terms were used most frequently to describe the firm, and the WordCloud nicely illustrates the specific words employees used both in positive and negative aspects. The top five descriptive words in the positive side were amazing, awesome, benefits, fun, and excellent, whereas the top five descriptive words in the negative side were bad, hard, challenging, worst and terrible. The analysis revealed that descriptive words kept consistent with two sentimental categories.
 
+---
 ### 4. Trend Analysis:
 
 After the text mining analysis, our next step was to use trend analysis to estimate the change of overall ratings over years for each company. We separated the employees’ current job status from the job-title variable into two categories: current employees and former employees, and we analyzed the correlation between the overall ratings and employees’ job status. Current employees rated their firms higher than former employee which is not surprising to us since former employees had their reasons to leave the firms. Google, Amazon, Facebook, Apple, Microsoft, and Netflix are the most well-known companies worldwide and yet their overall ratings from former employees’ perspective still have some rooms to improve.
 
 While interesting, we started to analyze the overall ratings work balance stars, culture values stars, career opportunities stars, company benefit stars, and senior management stars trend over years for each firm. The package Lubridate was used to track the change and visualize the fluctuation over time. In Google, the trends of all variables were on the rise from 2008 to 2018 except for culture values stars. Additionally, the fluctuations of curves were bigger in the work balance stars and the culture values than other variables. It revealed that Google employees’ satisfaction on work balance and culture values were decreasing in the last ten years. All of the ratings variables in Amazon has decreased to bottom and recovered to its peak over time, and the trends in general is on the increase except for work balance stars. Microsoft has similar trends with Amazon, yet the company benefit stars have decreased over the decade with great fluctuation. On the other hand, Apple and Facebook have some noticeable decreases in work balance stars and culture values stars, and other categories have wide fluctuation from 2008 to 2018. Comparing with the other five firms, Netflix performs the poorest especially in overall ratings and senior management stars. Netflix reached its perk in 2008 in almost all categories and flopped dramatically throughout these years, which indicate that Netflix employees’ dissatisfaction was getting stronger and stronger. It brought our interests that all rating scores had reached its bottom at the year 2010, the potential cause might be the political and economic environment which need further investigation.
 
-
+---
 ### 5. Summary
 
 Based on our analysis on the dataset, we had some interesting findings on employees’ reviews on their company.
@@ -61,6 +63,7 @@ Based on our analysis on the dataset, we had some interesting findings on employ
 
 2. After text mining the Pros and Cons of the six companies, we discovered that Apple and Amazon have a better working environment, Netflix has a potential higher payment, Microsoft and Google tend to hire more intelligent employees, and Amazon and Microsoft provide better career opportunities for the employees. Besides, management is an overall problem for all six companies, and Facebook tends to have a better management system. For Netflix, the dismissal problem was severe and has led to more complaints from the employees. Microsoft has a severe problem on workplace politics, and this could potentially lead to employee disappointment and generate obstacles for the company’s long-term goals.
 
+---
 ### 6. Business Recommendations
 
 For the six companies:
